@@ -1,0 +1,381 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #111;
+}
+
+@media screen and (min-width: 768px) {}
+
+/* home section */
+.bg-container {
+    background-image: url("https://images.pexels.com/photos/4360449/pexels-photo-4360449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    height: 50rem;
+    background-size: max(1440px, 100vw);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+}
+
+/*nav bar*/
+.nav-bar {
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    padding: 2rem 4rem;
+
+}
+
+.nav-name {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.box {
+    height: 50rem;
+    opacity: 0.69;
+    background-color: #000;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.card-container {
+    height: 40rem;
+    margin-left: 2rem;
+    height: calc(100% - 300px);
+}
+
+
+.name {
+    font-weight: bold;
+    padding: 5px 10px;
+    text-shadow: 1px 1px;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: rainbow 5s linear infinite;
+
+}
+
+@keyframes rainbow {
+    to {
+        background-position-x: 400px;
+    }
+}
+
+
+
+.nav-item {
+    position: relative;
+    cursor: pointer;
+    color: #efefee;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.25s;
+    padding: 0.5rem 1rem;
+}
+
+.nav-item::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: white;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 10px;
+}
+
+.nav-item:hover {
+    color: black;
+}
+
+.nav-item:hover::after {
+    scale: 1 1;
+
+}
+
+.caption1 {
+    font-weight: 300;
+    font-size: 25px;
+    position: relative;
+    padding: 0px 5px 10px 10px;
+    z-index: 10;
+}
+
+.caption2 {
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    padding: 5px 10px;
+    z-index: 10;
+}
+
+.fresher-text {
+    position: relative;
+    color: transparent;
+    font-weight: bold;
+    padding: 5px 10px;
+    z-index: 10;
+}
+
+.fresher-text::before {
+    content: attr(textVal);
+    position: absolute;
+    color: red;
+    border-right: 2px solid pink;
+    width: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: spananimate 3s linear infinite;
+
+}
+
+@keyframes spananimate {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    40%,
+    50% {
+        width: 100%;
+    }
+
+    70% {
+        width: 50%;
+    }
+
+    90% {
+        width: 0;
+    }
+}
+
+.hire-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid pink;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.hire-btn:hover {
+    box-shadow: 4px 4px 5px violet;
+    transform: scale(1.1);
+}
+
+
+/*about me section*/
+.first-section {
+    background-color: #fff;
+}
+
+.first-card-container {}
+
+.first-image {
+    height: 25rem;
+}
+
+.about-heading {
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.top-caption {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.first-heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.first-description {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.download-button {
+    padding: 1rem 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/*skills section*/
+.skills-card-container {
+    background-color: #000;
+    color: #fff;
+}
+
+.poll {
+
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.bar {
+    line-height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+.certifications-section {
+    background-color: #000;
+    color: white;
+}
+
+/* projects section*/
+.projects-section {
+    background-color: #fff;
+}
+
+.project-card-image {
+    border-radius: 16px;
+}
+
+.project-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 14px;
+}
+
+.project-link {
+    font-family: "Roboto";
+    font-size: 10px;
+    font-weight: 500;
+
+}
+
+.project-card {
+    border-radius: 16px;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.projects-done-cap {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* contact section */
+
+.contact-card-logo {
+    font-size: 2rem;
+}
+
+.contact-details-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact-get-text {
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+.contact-form {}
+
+.contact-section {
+    background-color: #000;
+    color: white;
+}
+
+.contact-name-input {
+    width: 100%;
+    border-radius: 5px;
+    height: 3.5rem;
+    border: 1px solid #000;
+}
+
+.contact-subject-input {
+    width: 100%;
+    border-radius: 5px;
+    height: 3.5rem;
+    border: 1px solid #000;
+}
+
+.send-message-btn {
+    color: white;
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.send-message-btn:hover {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+.about-des {}
+
+.message-text-area {
+    width: 100%;
+    border-radius: 5px;
+    height: 5rem;
+    border: 1px solid #000;
+}
+
+.message-text {
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+
+/* footer section */
+.footer-section {
+    background-color: #0d2436;
+    height: 20rem;
+
+}
+
+footer div i {
+    color: blue;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.footer-rights {
+    width: 20rem;
+    font-family: "Roboto";
+    padding: 10px;
+}
+
+.connect:hover {
+    transition: all 1s;
+    transform: scale(1.3);
+}
